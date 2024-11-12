@@ -1,0 +1,23 @@
+{
+  "name": "forge",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "CLI for init project",
+  "main": "index.js",
+  "bin": {
+    "forge": "./index.js"
+  },
+  "scripts": {},
+  "keywords": [
+    "CLI",
+    "projet",
+    "init",
+    "template",
+    "git"
+  ],
+  "author": "florob95",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^7.0.1"
+  }
+}
