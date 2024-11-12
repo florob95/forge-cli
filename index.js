@@ -5,7 +5,7 @@ import path from 'path';
 async function initProject(template, projectName) {
     const templates = {
         "node-ts": "https://github.com/florob95/node-ts-starter-kit.git",
-        // Add more templates here if needed
+        "node-grpc": "https://github.com/florob95/node-grpc.git",
     };
 
     if (!templates[template]) {
@@ -24,7 +24,6 @@ async function initProject(template, projectName) {
     }
 }
 
-// Get command arguments
 const [, , template, projectName] = process.argv;
 
 if (!template || !projectName) {
