@@ -9,6 +9,7 @@ async function initProject(template, projectName) {
     const templates = {
         "node-ts": "https://github.com/florob95/node-ts-starter-kit.git",
         "node-grpc": "https://github.com/florob95/node-grpc.git",
+        "node-nest": "https://github.com/florob95/nest-starter-kit.git",
     };
 
     if (!templates[template]) {
@@ -39,4 +40,4 @@ if (!arg1 || !arg2) {
     process.exit(1);
 }
 
-initProject(template, projectName);
+initProject(arg1, arg2);
