@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 import { execa } from 'execa';
 import path from 'path';
+import { readFileSync } from 'fs';
+
+const packageJson = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf-8'));
 
 async function initProject(template, projectName) {
     const templates = {
@@ -24,9 +27,14 @@ async function initProject(template, projectName) {
     }
 }
 
-const [, , template, projectName] = process.argv;
+const [, , arg1, arg2] = process.argv;
 
-if (!template || !projectName) {
+if (arg1 === '-v' || arg1 === '--version') {
+    console.log(`Forge version: ${packageJson.version}`);
+    process.exit(0);
+}
+
+if (!arg1 || !arg2) {
     console.error("Usage: forge <template> <project-name>");
     process.exit(1);
 }

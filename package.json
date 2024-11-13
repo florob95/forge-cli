@@ -1,7 +1,7 @@
 {
   "name": "forge",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CLI for init project",
   "main": "index.js",
   "bin": {
