@@ -13,7 +13,7 @@ async function initProject(template, projectName) {
     };
 
     if (!templates[template]) {
-        console.error(`Template not found: ${template}`);
+        console.error(`\x1b[31m Template not found: ${template}  \x1b[0m`);
         process.exit(1);
     }
 
@@ -21,9 +21,9 @@ async function initProject(template, projectName) {
 
     try {
         await execa('git', ['clone', templates[template], projectPath]);
-        console.log(`Project "${projectName}" created successfully!`);
+        console.log(`\x1b[32m Project "${projectName}" created successfully! \x1b[0m`);
     } catch (error) {
-        console.error('Error while cloning:', error);
+        console.error('\x1b[31m Error while cloning: \x1b[0m', error);
         process.exit(1);
     }
 }
@@ -31,7 +31,7 @@ async function initProject(template, projectName) {
 const [, , arg1, arg2] = process.argv;
 
 if (arg1 === '-v' || arg1 === '--version') {
-    console.log(`Forge version: ${packageJson.version}`);
+    console.log(`\x1b[30m \x1b[42m Forge version: ${packageJson.version} \x1b[0m`);
     process.exit(0);
 }
 
