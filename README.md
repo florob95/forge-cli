@@ -25,6 +25,6 @@ This will clone the init-basic-ts template repository and create a new project n
 
 ### Available Templates
 
-node-ts: A basic Node TypeScript template
-node-grpc: A basic Node TypeScript grpc template
-node-nest: A basic Node TypeScript Nest template in esm
+- node-ts: A basic Node TypeScript template
+- node-grpc: A basic Node TypeScript grpc template
+- node-nest: A basic Node TypeScript Nest template in esm
