@@ -1,6 +1,6 @@
 # Forge CLI
 
-**Forge** is a Node.js CLI that allows you to initialize projects from predefined templates by cloning Git repositories.
+**forge-cli** is a Node.js Cli that allows you to initialize projects from predefined templates by cloning Git repositories.
 
 ## Installation
 
@@ -11,20 +11,21 @@ npm install -g https://github.com/florob95/forge.git
 ```
 
 ## Usage
+
 ### Syntax
 
-```forge <template> <project-name>```
+`forge <template> <project-name>`
 
 ### Example
 
 To create a basic TypeScript project:
 
-```forge node-ts myProject```
+`forge node-ts myProject`
 
 This will clone the init-basic-ts template repository and create a new project named myProject.
 
 ### Available Templates
 
-- node-ts: A basic Node TypeScript template
-- node-grpc: A basic Node TypeScript grpc template
-- node-nest: A basic Node TypeScript Nest template in esm
+- [node-ts](https://github.com/florob95/node-ts-starter-kit.git): A basic Node TypeScript template 
+- [node-grpc](https://github.com/florob95/node-grpc-starter-kit.git): A basic Node TypeScript grpc template
+- [node-nest](https://github.com/florob95/node-nest-starter-kit.git): A basic Node TypeScript Nest template in esm
