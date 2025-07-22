@@ -26,6 +26,7 @@ This will clone the init-basic-ts template repository and create a new project n
 
 ### Available Templates
 
-- [node-ts](https://github.com/florob95/node-ts-starter-kit.git): A basic Node TypeScript template 
+- [node-ts](https://github.com/florob95/node-ts-starter-kit.git): A basic Node TypeScript template
 - [node-grpc](https://github.com/florob95/node-grpc-starter-kit.git): A basic Node TypeScript grpc template
 - [node-nest](https://github.com/florob95/node-nest-starter-kit.git): A basic Node TypeScript Nest template in esm
+- [web-react](https://github.com/florob95/react-starter-kit): A basic react router with shadcn-ui template

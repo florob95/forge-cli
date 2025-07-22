@@ -12,6 +12,7 @@ const templates = {
   'node-grpc': 'https://github.com/florob95/node-grpc-starter-kit.git',
   'node-nest': 'https://github.com/florob95/node-nest-starter-kit.git',
   'node-ts': 'https://github.com/florob95/node-ts-starter-kit.git',
+  'web-react': 'https://github.com/florob95/react-starter-kit.git',
 }
 
 async function initProject(template, projectName) {
